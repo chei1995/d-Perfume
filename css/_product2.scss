@@ -1,0 +1,67 @@
+// @include flex(row, center, top);
+// @include mobile {
+//     display: none;
+// }
+.product {
+    @include flex(row-reverse, space-between, top);
+    @include mobile {
+        @include flex(column, space-between, top);
+    }
+}
+
+.productIntro {
+    max-width: 32.333%;
+    @include mobile {
+        max-width: 100%;
+    }
+    img {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    .btn {
+        @include flex(row, space-between, center);
+        border: 1px solid $brown;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        input {
+            margin-left: 16px;
+            border: none;
+            outline: none;
+        }
+        button {
+            padding: 14px 50px;
+            color: #fff;
+            border: none;
+            background: $brown;
+        }
+    }
+    .like {
+        i {
+            color: $brown;
+        }
+    }
+}
+
+.img {
+    @include flex(column, space-between, center);
+    max-width: 65.666%;
+    @include mobile {
+        max-width: 100%;
+    }
+    div {
+        margin: 15px 0;
+        @include flex(row, space-between, top);
+        @include mobile {
+            @include flex(column, space-between, center);
+        }
+        img {
+            max-width: 49%;
+            @include mobile {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+}

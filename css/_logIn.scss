@@ -1,0 +1,63 @@
+// @include flex(row, center, top);
+// @include mobile {
+//     display: none;
+// }
+.logIn {
+    margin-bottom: 82px;
+    @include flex(row, space-between, center);
+    @include mobile {
+        @include flex(column, space-between, center);
+    }
+    .imgRow {
+        width: 65.6666%;
+        @include mobile {
+            width: 100%;
+            margin-top: 48px;
+        }
+    }
+    form {
+        width: 32.3333333%;
+        @include flex(column, space-between, top);
+        @include mobile {
+            width: 100%;
+            margin-top: 28px;
+        }
+        label {
+            margin: 12px 0 4px;
+        }
+        input {
+            background: #FFFFFF;
+            border: 1px solid #CED4DA;
+            border-radius: 4px;
+            padding: 9px 12px;
+            outline: none;
+            margin-bottom: 20px;
+        }
+        .btnRow {
+            @include flex(row, space-between, center);
+            @include mobile {
+                margin-top: 2px;
+            }
+        }
+        a {
+            color: $brown;
+            text-decoration: none;
+        }
+        a.btn {
+            cursor: pointer;
+            background: #FFFFFF;
+            border: 1px solid $brown;
+            padding: 8px 16px;
+            border-radius: 4px;
+            color: $brown;
+            &:hover {
+                background: $brown;
+                color: #fff;
+            }
+        }
+        a.active {
+            background: $brown;
+            color: #fff;
+        }
+    }
+}

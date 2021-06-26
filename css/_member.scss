@@ -1,0 +1,153 @@
+// @include flex(row, center, top);
+// @include mobile {
+//     display: none;
+// }
+.memberCenter {
+    @include flex(row, space-between, top);
+    @include mobile {
+        @include flex(column, space-between, top);
+    }
+}
+
+.memberMenu {
+    width: 15%;
+    color: #848484;
+    @include mobile {
+        width: 100%;
+    }
+    ul {
+        @include flex(column, space-between, top);
+        margin-top: 28px;
+        height: 96px;
+        @include mobile {
+            @include flex(row, space-between, top);
+            height: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: #848484;
+            padding-bottom: 3px;
+            .active,
+            &:hover {
+                border-bottom: 2px solid #916000;
+            }
+        }
+        .active {
+            border-bottom: 2px solid #916000;
+        }
+    }
+}
+
+.memberInfo {
+    width: 83%;
+    @include flex(row-reverse, space-between, top);
+    @include mobile {
+        width: 100%;
+        @include mobile {
+            @include flex(column, space-between, top);
+        }
+    }
+}
+
+.modify {
+    width: 65%;
+    @include mobile {
+        width: 100%;
+        margin-top: 48px;
+    }
+    .labelStyle {
+        @include flex(row, flex-start, top);
+        max-height: 185px;
+        color: #818A91;
+        margin: 20px 0;
+        p {
+            width: 95px;
+            margin-top: 13px;
+        }
+        input[type="text"] {
+            width: 70%;
+        }
+        div {
+            width: 70%;
+            @include flex(column, flex-start, top);
+            select {
+                max-width: 160px;
+                margin: 0 0 10px 0;
+            }
+            span {
+                @include flex(row, flex-start, top);
+                select {
+                    width: 160px;
+                    margin: 0 8px 10px 0;
+                }
+            }
+            input[type="text"] {
+                margin: 0 0 10px 0;
+                width: 100%;
+            }
+            input[type="checkbox"] {
+                width: 15px;
+            }
+            p.text {
+                width: auto;
+            }
+        }
+        .memberInput {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #CED4DA;
+            border-radius: 4px;
+            outline: none;
+            padding: 10px;
+            color: #818A91;
+            font-size: 16px;
+        }
+    }
+    button {
+        margin: 0 0 48px 95px;
+        padding: 8px 48px;
+        border: 1px solid #916000;
+        border-radius: 4px;
+        background: #fff;
+        color: #916000;
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+            background: #916000 0% 0% no-repeat padding-box;
+        }
+    }
+}
+
+.memberNo {
+    width: 33%;
+    color: #818A91;
+    @include mobile {
+        width: 100%;
+    }
+    h4 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        i {
+            margin-right: 5px;
+            color: #000;
+        }
+        span {
+            margin-left: 6px;
+        }
+    }
+    li {
+        margin-bottom: 16px;
+        p.text {
+            display: inline-block;
+            width: 35%;
+        }
+        p.num {
+            display: inline-block;
+        }
+    }
+    span.new {
+        color: #A5A5A5;
+        font-size: 14px;
+        font-weight: 200;
+    }
+}
