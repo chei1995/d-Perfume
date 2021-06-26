@@ -1,0 +1,1830 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.pb-2 {
+  padding-bottom: 16px;
+}
+
+.ptb-5 {
+  padding: 40px 0;
+}
+
+.pl-1 {
+  padding-left: 8px;
+}
+
+.p-60 {
+  padding: 60px;
+}
+
+@media (max-width: 767px) {
+  .p-60 {
+    padding: 32px 0;
+  }
+}
+
+.mt-52 {
+  margin-top: 52px;
+}
+
+.mtb-20 {
+  margin: 20px 0px;
+}
+
+.ml-20 {
+  margin: 0 0 0 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.fz-5-white {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.fz-2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 200;
+}
+
+.fz-3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fz-4 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.fz-5 {
+  font-size: 40px;
+}
+
+.fz-20 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
+.fz-20-white {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.fz-2-golden {
+  font-size: 16px;
+  color: #916000;
+  line-height: 24px;
+  padding: 0 0 2px 0;
+}
+
+.fz-2-golden:hover {
+  border-bottom: 2px solid #916000;
+  cursor: pointer;
+}
+
+.fz-4-gray {
+  font-size: 32px;
+  color: #707070;
+  line-height: 48px;
+}
+
+.boldTitle {
+  font-weight: bold;
+}
+
+.bbl {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #818A91;
+}
+
+.fz-4-gray {
+  font-size: 32px;
+  color: #707070;
+  line-height: 48px;
+}
+
+.fd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .logo {
+  margin: 9px 0;
+  height: 38px;
+}
+
+.container .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .list li {
+  margin: 0 14px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .container .list li {
+    display: none;
+  }
+}
+
+.container .list li a {
+  color: #707070;
+  text-decoration: none;
+}
+
+.container .list li a i {
+  margin-right: 3px;
+}
+
+.container .list li a:hover {
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
+}
+
+.container .mobleList {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .container .mobleList {
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.container .mobleList .ham-icons {
+  display: none;
+  color: #707070;
+}
+
+.container .mobleList .ham-icons:hover {
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
+}
+
+@media (max-width: 767px) {
+  .container .mobleList .ham-icons {
+    display: block;
+  }
+}
+
+.container .mobleList .car {
+  display: none;
+  color: #707070;
+}
+
+.container .mobleList .car em {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  font-size: 12px;
+  background: #916000;
+  border-radius: 999rem;
+  position: absolute;
+  line-height: 16px;
+  text-align: center;
+  top: 10px;
+}
+
+.container .mobleList .car:hover {
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
+}
+
+@media (max-width: 767px) {
+  .container .mobleList .car {
+    display: block;
+  }
+}
+
+.container .bg {
+  position: absolute;
+  left: 0;
+  top: 56px;
+  width: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.699);
+  height: 100vh;
+}
+
+.container .toggerList {
+  position: absolute;
+  left: 0;
+  top: 56px;
+  width: 100%;
+  max-height: 0px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container .toggerList.active {
+  max-height: 250px;
+}
+
+.container .toggerList li a {
+  text-align: center;
+  display: block;
+  background: #707070;
+  color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.container .toggerList li a:hover {
+  background: #916000;
+}
+
+.banner {
+  color: #fff;
+  height: 840px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 580px;
+    background-size: cover;
+    background-position-x: -160px;
+  }
+}
+
+.banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: row-reverse;
+      -ms-flex-align: row-reverse;
+          align-items: row-reverse;
+}
+
+.banner .content {
+  max-width: 445px;
+  padding-top: 20%;
+}
+
+@media (max-width: 767px) {
+  .banner .content {
+    text-shadow: 1px 1px 3px #00000047;
+  }
+}
+
+.banner .content .btn-wh {
+  color: #fff;
+  font-size: 28px;
+  border: 2px solid #fff;
+  border-radius: 37px;
+  padding: 13px 109px;
+  background: none;
+}
+
+@media (max-width: 767px) {
+  .banner .content .btn-wh {
+    padding: 13px 100px;
+  }
+}
+
+.banner .content .btn-wh:hover {
+  cursor: pointer;
+  color: #707070;
+  background: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.perfumeIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
+  }
+}
+
+.perfumeIntro .img {
+  width: 50%;
+  height: 555px;
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro .img {
+    width: 100%;
+  }
+}
+
+.perfumeIntro .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.perfumeIntro .largeImg {
+  width: 50%;
+  height: 1080px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index5.jpg?raw=true");
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro .largeImg {
+    width: 100%;
+  }
+}
+
+.perfumeIntro section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro section {
+    width: 100%;
+  }
+}
+
+.perfumeIntro section .textContent {
+  max-width: 350px;
+}
+
+.perfumeIntro section .btn-bk {
+  border: 2px solid #000;
+  border-radius: 37px;
+  padding: 8px 40px;
+  background: #ffffff;
+}
+
+.perfumeIntro section .btn-bk:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.perfumeIntro section a {
+  text-decoration: none;
+}
+
+.onSale {
+  background: #ccc;
+}
+
+.onSale .saleProsduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.onSale .saleProsduct li {
+  max-width: 32%;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct li {
+    max-width: 100%;
+    padding: 0 0 32px 0;
+  }
+}
+
+.onSale .saleProsduct li img {
+  height: 540px;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct li img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.onSale .saleProsduct li .price {
+  color: #707070;
+  text-decoration: line-through;
+}
+
+.onSale .saleProsduct li .dark {
+  -webkit-filter: contrast(0.4);
+          filter: contrast(0.4);
+}
+
+.onSale .saleProsduct li .soldOut {
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  padding: 252px 130px;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct li .soldOut {
+    padding: 55% 30%;
+  }
+}
+
+.articleRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .articleRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.articleRow .img {
+  width: 65.66%;
+}
+
+@media (max-width: 767px) {
+  .articleRow .img {
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index9.jpg?raw=true");
+  }
+}
+
+@media (max-width: 767px) {
+  .articleRow .img img {
+    display: none;
+  }
+}
+
+.articleRow section {
+  max-width: 32.33%;
+}
+
+@media (max-width: 767px) {
+  .articleRow section {
+    max-width: 100%;
+  }
+}
+
+.mail {
+  padding: 312px 0 0 0;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+}
+
+.mail .content .btn {
+  padding: 20px 0 0;
+}
+
+.mail .content span {
+  display: inline-block;
+  background: #916000;
+  border: 2px solid #916000;
+  border-radius: 4px;
+}
+
+.mail .content span input {
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  padding: 20px 97px 20px 16px;
+}
+
+@media (max-width: 767px) {
+  .mail .content span input {
+    padding: 21px 10px;
+  }
+}
+
+.mail .content span button {
+  color: #fff;
+  background-color: #916000;
+  border: 2px solid #916000;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 27px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .mail .content span button {
+    padding: 21px 5px;
+  }
+}
+
+footer {
+  background: #916000;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .copyright img {
+  height: 38px;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .menu a {
+  margin: 0 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .menu a:hover {
+  opacity: .3;
+}
+
+@media (max-width: 767px) {
+  footer .menu a {
+    display: none;
+  }
+}
+
+.addLike,
+.addCart {
+  display: none;
+}
+
+.bgbk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  position: fixed;
+}
+
+.bgbk span {
+  padding: 17px 200px;
+  background: #fff;
+  color: #916000;
+  border-radius: 4px;
+}
+
+.perfumeAll {
+  background: #916000;
+  padding: 14px 0;
+  margin: 0 0 80px;
+}
+
+@media (max-width: 767px) {
+  .perfumeAll {
+    display: none;
+  }
+}
+
+.perfumeAll ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.perfumeAll ul a {
+  color: #FFFFFF;
+  margin: 0 28px 0 0;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.perfumeAll ul a:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.productList {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.productList li {
+  width: 24.5%;
+  margin: 0 0 58px;
+}
+
+@media (max-width: 767px) {
+  .productList li {
+    width: 49%;
+    margin: 0 0 30px;
+  }
+}
+
+.productList li h3 {
+  font-size: 24px;
+}
+
+@media (max-width: 767px) {
+  .productList li h3 {
+    font-size: 20px;
+  }
+}
+
+.productList li img {
+  width: 255px;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 767px) {
+  .productList li img {
+    width: 165px;
+    height: 165px;
+  }
+}
+
+.productList li span {
+  margin: 0 0 0 8px;
+  color: #707070;
+  text-decoration: line-through;
+}
+
+.productList li i {
+  margin: 2px 11px 0 0;
+  font-size: 20px;
+  color: #916000;
+  cursor: pointer;
+}
+
+.productList li i:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.page a {
+  color: #000;
+  padding: 0 5px;
+  margin: 0 4px;
+  text-decoration: none;
+}
+
+.page a:hover {
+  color: #916000;
+  border-bottom: 2px solid #AC8A46;
+}
+
+.page .underline {
+  color: #916000;
+  border-bottom: 2px solid #AC8A46;
+}
+
+.banner {
+  color: #fff;
+  height: 840px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 580px;
+    background-size: cover;
+    background-position-x: -160px;
+  }
+}
+
+.banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: row-reverse;
+      -ms-flex-align: row-reverse;
+          align-items: row-reverse;
+}
+
+.banner .content {
+  max-width: 445px;
+  padding-top: 20%;
+}
+
+@media (max-width: 767px) {
+  .banner .content {
+    text-shadow: 1px 1px 3px #00000047;
+  }
+}
+
+.banner .content .btn-wh {
+  color: #fff;
+  font-size: 28px;
+  border: 2px solid #fff;
+  border-radius: 37px;
+  padding: 13px 109px;
+  background: none;
+}
+
+@media (max-width: 767px) {
+  .banner .content .btn-wh {
+    padding: 13px 100px;
+  }
+}
+
+.banner .content .btn-wh:hover {
+  cursor: pointer;
+  color: #707070;
+  background: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.perfumeIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
+  }
+}
+
+.perfumeIntro .img {
+  width: 50%;
+  height: 555px;
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro .img {
+    width: 100%;
+  }
+}
+
+.perfumeIntro .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.perfumeIntro .largeImg {
+  width: 50%;
+  height: 1080px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index5.jpg?raw=true");
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro .largeImg {
+    width: 100%;
+  }
+}
+
+.perfumeIntro section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .perfumeIntro section {
+    width: 100%;
+  }
+}
+
+.perfumeIntro section .textContent {
+  max-width: 350px;
+}
+
+.perfumeIntro section .btn-bk {
+  border: 2px solid #000;
+  border-radius: 37px;
+  padding: 8px 40px;
+  background: #ffffff;
+}
+
+.perfumeIntro section .btn-bk:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.perfumeIntro section a {
+  text-decoration: none;
+}
+
+.onSale {
+  background: #ccc;
+}
+
+.onSale .saleProsduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.onSale .saleProsduct li {
+  max-width: 32%;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct li {
+    max-width: 100%;
+    padding: 0 0 32px 0;
+  }
+}
+
+.onSale .saleProsduct li img {
+  height: 540px;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct li img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.onSale .saleProsduct li .price {
+  color: #707070;
+  text-decoration: line-through;
+}
+
+.onSale .saleProsduct li .dark {
+  -webkit-filter: contrast(0.4);
+          filter: contrast(0.4);
+}
+
+.onSale .saleProsduct li .soldOut {
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  padding: 252px 130px;
+}
+
+@media (max-width: 767px) {
+  .onSale .saleProsduct li .soldOut {
+    padding: 55% 30%;
+  }
+}
+
+.articleRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .articleRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.articleRow .img {
+  width: 65.66%;
+}
+
+@media (max-width: 767px) {
+  .articleRow .img {
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index9.jpg?raw=true");
+  }
+}
+
+@media (max-width: 767px) {
+  .articleRow .img img {
+    display: none;
+  }
+}
+
+.articleRow section {
+  max-width: 32.33%;
+}
+
+@media (max-width: 767px) {
+  .articleRow section {
+    max-width: 100%;
+  }
+}
+
+.memberCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+@media (max-width: 767px) {
+  .memberCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+  }
+}
+
+.memberMenu {
+  width: 15%;
+  color: #848484;
+}
+
+@media (max-width: 767px) {
+  .memberMenu {
+    width: 100%;
+  }
+}
+
+.memberMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  margin-top: 28px;
+  height: 96px;
+}
+
+@media (max-width: 767px) {
+  .memberMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    height: 50px;
+  }
+}
+
+.memberMenu ul a {
+  text-decoration: none;
+  color: #848484;
+  padding-bottom: 3px;
+}
+
+.memberMenu ul a .active, .memberMenu ul a:hover {
+  border-bottom: 2px solid #916000;
+}
+
+.memberMenu ul .active {
+  border-bottom: 2px solid #916000;
+}
+
+.memberInfo {
+  width: 83%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+@media (max-width: 767px) {
+  .memberInfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .memberInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+  }
+}
+
+.modify {
+  width: 65%;
+}
+
+@media (max-width: 767px) {
+  .modify {
+    width: 100%;
+    margin-top: 48px;
+  }
+}
+
+.modify .labelStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  max-height: 185px;
+  color: #818A91;
+  margin: 20px 0;
+}
+
+.modify .labelStyle p {
+  width: 95px;
+  margin-top: 13px;
+}
+
+.modify .labelStyle input[type="text"] {
+  width: 70%;
+}
+
+.modify .labelStyle div {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.modify .labelStyle div select {
+  max-width: 160px;
+  margin: 0 0 10px 0;
+}
+
+.modify .labelStyle div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.modify .labelStyle div span select {
+  width: 160px;
+  margin: 0 8px 10px 0;
+}
+
+.modify .labelStyle div input[type="text"] {
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.modify .labelStyle div input[type="checkbox"] {
+  width: 15px;
+}
+
+.modify .labelStyle div p.text {
+  width: auto;
+}
+
+.modify .labelStyle .memberInput {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  color: #818A91;
+  font-size: 16px;
+}
+
+.modify button {
+  margin: 0 0 48px 95px;
+  padding: 8px 48px;
+  border: 1px solid #916000;
+  border-radius: 4px;
+  background: #fff;
+  color: #916000;
+}
+
+.modify button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #916000 0% 0% no-repeat padding-box;
+}
+
+.memberNo {
+  width: 33%;
+  color: #818A91;
+}
+
+@media (max-width: 767px) {
+  .memberNo {
+    width: 100%;
+  }
+}
+
+.memberNo h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.memberNo h4 i {
+  margin-right: 5px;
+  color: #000;
+}
+
+.memberNo h4 span {
+  margin-left: 6px;
+}
+
+.memberNo li {
+  margin-bottom: 16px;
+}
+
+.memberNo li p.text {
+  display: inline-block;
+  width: 35%;
+}
+
+.memberNo li p.num {
+  display: inline-block;
+}
+
+.memberNo span.new {
+  color: #A5A5A5;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.logIn {
+  margin-bottom: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .logIn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.logIn .imgRow {
+  width: 65.6666%;
+}
+
+@media (max-width: 767px) {
+  .logIn .imgRow {
+    width: 100%;
+    margin-top: 48px;
+  }
+}
+
+.logIn form {
+  width: 32.3333333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+@media (max-width: 767px) {
+  .logIn form {
+    width: 100%;
+    margin-top: 28px;
+  }
+}
+
+.logIn form label {
+  margin: 12px 0 4px;
+}
+
+.logIn form input {
+  background: #FFFFFF;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+  padding: 9px 12px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.logIn form .btnRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .logIn form .btnRow {
+    margin-top: 2px;
+  }
+}
+
+.logIn form a {
+  color: #916000;
+  text-decoration: none;
+}
+
+.logIn form a.btn {
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #916000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #916000;
+}
+
+.logIn form a.btn:hover {
+  background: #916000;
+  color: #fff;
+}
+
+.logIn form a.active {
+  background: #916000;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

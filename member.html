@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d’Perfume 會員中心</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <!--按鈕區-->
+    <div class='addLike'><span>已加入我的收藏</span></div>
+    <div class="addCart"><span>已加入購物車</span></div>
+    <div class="container">
+        <header>
+            <a href="index.html"><img class='logo' src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume@2x.png?raw=true" alt="Logo"></a>
+            <ul class='list'>
+                <li>
+                    <a class='fz-20' href="product.html"><i class="fas fa-store-alt"></i>Product</a>
+                </li>
+                <li>
+                    <a class='fz-20' href="logIn.html"><i class="fas fa-user"></i>Log in</a>
+                </li>
+                <li>
+                    <a class='fz-20' href="#"><i class="fas fa-heart"></i>Wishlist</a>
+                </li>
+                <li>
+                    <a class='fz-20' href="#"><i class="fas fa-cart-plus"></i>Cart(3)</a>
+                </li>
+            </ul>
+            <div class='mobleList'>
+                <a class='fz-20 car ' href="#"><i class="fas fa-cart-plus"></i> <em>3</em></a>
+                <a href="#" class="ham-icons">
+                    <i class="fas fa-bars fa-2x"></i>
+                </a>
+            </div>
+            <div class="bg"></div>
+            <ul class="toggerList">
+                <li><a href="product.html">Product</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My page</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="perfumeAll">
+        <ul class='container'>
+            <li>
+                <a href="#">CHANEL</a>
+            </li>
+            <li>
+                <a href="#">Jo Malone</a>
+            </li>
+            <li>
+                <a href="#">Curology</a>
+            </li>
+            <li>
+                <a href="#">Dior</a>
+            </li>
+            <li>
+                <a href="#">Chloe</a>
+            </li>
+            <li>
+                <a href="#">ZARA</a>
+            </li>
+        </ul>
+    </div>
+    <div class="memberCenter container">
+        <div class="memberMenu">
+            <h3 class="fz-20 boldTitle">會員中心</h3>
+            <ul>
+                <li><a class='active' href="#">會員資料修改</a></li>
+                <li><a href="#">訂單查詢</a></li>
+                <li><a href="#">退/換貨申請</a></li>
+            </ul>
+        </div>
+        <div class="memberInfo">
+
+            <div class="memberNo">
+
+                <h4 class="fz-16"><i class="fas fa-user"></i>會員編號 <span class="fz-20 boldTitle">T00020080615</span> </h4>
+                <ul>
+                    <li class='fz-2'>
+                        <p class='text'>購物車</p>
+                        <p class='num'>56</p>
+                    </li>
+                    <li class='fz-2'>
+                        <p class='text'>我的收藏</p>
+                        <p class='num'>23</p>
+                    </li>
+                    <li class='fz-2'>
+                        <p class='text'>完成訂單</p>
+                        <p class='num'>8</p>
+                    </li>
+                    <li class='fz-2'>
+                        <p class='text'>會員紅利</p>
+                        <p class='num'>2680</p>
+                    </li>
+                    <li class='fz-2'>
+                        <p class='text'>邀請碼</p>
+                        <p class='num'>TK2075</p>
+                    </li>
+                </ul>
+                <span class='new'>新戶輸入邀請碼即可獲贈紅利點數1000點</span>
+            </div>
+            <div class="modify">
+                <form class='data'>
+                    <h4 class="fz-2 boldTitle bbl">個人資料修改</h4>
+                    <label class='labelStyle' for="account"><p>會員帳號</p><input class='memberInput ' readonly id='account' ype="text" value='email@example.com'></label>
+                    <label class='labelStyle' for="name"><p>會員姓名</p><input class='memberInput' placeholder="請輸入姓名" id='name' type="text"></label>
+                    <label class='labelStyle' for="gender"><p>會員性別</p>
+                        <select class='memberInput' id="gender">
+                        <option label="生理男性">生理男性</option>
+                        <option label="生理女性">生理女性</option>
+                        <option label="其他">其他</option>
+                        </select></label>
+                    <label class='labelStyle' for="email"><p>電子信箱</p><input class='memberInput' id='email' placeholder="請輸入信箱" type="text"></label>
+                    <label class='labelStyle' for="phone"><p>手機號碼</p><input class='memberInput' id='phone' placeholder="請輸入手機號碼" type="text"></label>
+                    <label class='labelStyle' for="address"><p>聯絡地址</p>
+                        
+                        <div>
+                        <select class='memberInput'>
+                        <option label="台灣及離島" selected>台灣及離島</option>
+                        </select>
+                            <span><select class='memberInput'>
+                                <option label="高雄市"selected>高雄市</option>
+                                <option label="高雄市"selected>高雄市</option>
+                                <option label="高雄市"selected>高雄市</option>
+                                <option label="高雄市"selected>高雄市</option>
+                            </select>
+                            <select class='memberInput'>
+                                <option label="鹽埕區" selected>鹽埕區</option>
+                            </select></span>
+                            <input class='memberInput' type="text" placeholder="請輸入地址">
+                            <p class='text'><input type="checkbox" name="" id="">我願意收到最新優惠情報</p>
+                        </div>
+                        </label>
+
+                    <label class='labelStyle' for=""><p>配送地址</p>
+                        <div>
+                        <select class='memberInput'>
+                        <option label="台灣及離島" selected>台灣及離島</option>
+                        </select>
+                            <span><select class='memberInput'>
+                                <option label="高雄市"selected>高雄市</option>
+                                <option label="高雄市"selected>高雄市</option>
+                                <option label="高雄市"selected>高雄市</option>
+                                <option label="高雄市"selected>高雄市</option>
+                            </select>
+                            <select class='memberInput'>
+                                <option label="鹽埕區" selected>鹽埕區</option>
+                            </select></span>
+                            <input class='memberInput' type="text" placeholder="請輸入地址"> 
+                        </div>                    
+                        
+                    </label>
+
+                </form>
+                <button>確定修改</button>
+                <form class='pwd'>
+                    <h4 class="fz-2 boldTitle bbl">修改密碼</h4>
+                    <label class='labelStyle' for=""><p>舊密碼</p><input class='memberInput' type="password"></label>
+                    <label class='labelStyle' for=" "><p>新密碼</p><input class='memberInput' type="password"></label>
+                    <label class='labelStyle' for=" "><p>確認密碼</p><input class='memberInput' type="password"></label>
+                </form>
+                <button>變更密碼</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container ">
+            <div class="copyright mtb-20 ">
+                <a href="index.html "><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfumewhite@2x.png?raw=true " alt="logo "></a>
+                <p class='ml-20'>© 2020. All Rights Reserved.</p>
+            </div>
+            <ul class="menu ">
+                <a class='fz-20-white' href="product.html ">
+                    <li>Product</li>
+                </a>
+                <a class='fz-20-white' href="# ">
+                    <li>Blog</li>
+                </a>
+                <a class='fz-20-white' href="# ">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js "></script>
+</body>
+
+</html>
+
+</html>
